@@ -1,0 +1,36 @@
+﻿CS 194 Fall 2015
+Project Proposal
+The Team: Dilek Uz, Stephanie Kim, Yaqi Miao, Joanne Xu
+
+
+“Our lives begin to end the day we become silent about things that matter.”
+                                                                        Martin Luther King Jr.
+
+
+Background
+Racism continues to be one of the leading challenges that the US faces in the 21st century. We see a great disparity in the income, access to resources such as education, loans, housing, and employment across different race groups. 
+
+
+Since the deadly shooting that took Trayvon Martin’s life back in 2012, race and crime became progressively more intertwined in the public arena. The injustice around race that takes place in this domain has been increasingly brought to the public attention via media outlets. We were confronted with the fact that black people are more likely to be incarcerated than white people for the same crime. We were shown that a black male is more likely to be shot when stopped by the police than white males. 
+
+
+We would like to use Twitter data in order to gauge how the magnitude of public reaction to raced crime has evolved over time and space. Public reaction is the fuel of social change therefore it is crucial to be able to understand how it changes over time and space. 
+
+
+Trayvon’s death was a clear breaking point in the public conscience. With this project our goal is to quantify the evolution of public reaction to hate crimes with black victims since he died. 
+
+
+The Data Sources
+We will obtain the data using Twitter REST api (https://dev.twitter.com/rest/public) and filtering tweets by keywords that are crime and race related. The tweets should span from now to years before. After obtaining the data, we will group by location and sort by date. For each tweet we will need to assign a general sentiment value and compare the values to each other. 
+We will also incorporate demographic data from the census in order to be able to control for the factors such as income and education. 
+Keywords: murder, shooting, gun, police, fatal, killing, killer, cop, criminal, massacre, gang, court, died
+
+
+Goals of the Analysis
+Hypothesis: The sentiment and reactions towards crimes involving black people have become more sympathetic and less racist overtime. However the rate of change and direction of sentiment varies by location, due to different race demographics and and cultural differences.
+We also would like to provide visual comparison of the trends over time across different communities with different racial compositions. 
+Description of Data Analysis
+We plan to use a sentiment library that detects the general reaction from parsing a tweet. (E.g. is the tweet happy? Indignant? Annoyed?) For data visualization, we will use a data visualization library such as D3, to map fluctuating line graphs and different colors across a US map to represent the general sentiment.
+We will first quantify the sentiments the regress that measure on demographic variables like education, income, racial composition as well as a time trend. We expect to see a significant coefficient for the racial composition. 
+Data Products
+Data products include results of statistical tests, performance analyses of learning algorithms, visualizations of the data or model parameters. Give a list of these relevant to your project. Change over time line graph of reactions toward crimes involving black people. Sentiment comparison of different regions around the US.

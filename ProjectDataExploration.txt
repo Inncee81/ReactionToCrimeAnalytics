@@ -1,0 +1,33 @@
+CS 194 - Project Data Exploration
+Dilek Uz
+Yaqi Miao
+Stephanie Kim
+Joanne Xu
+
+Problem Statement and Background (4 points)
+We would like to use Twitter data in order to gauge how the magnitude of public reaction to raced crime has evolved over time and space. Public reaction is the fuel of social change therefore it is crucial to be able to understand how it changes. 
+
+
+We want to see if sentiment and reactions towards crimes involving black people have become more sympathetic and less racist overtime. However the rate of change and direction of sentiment varies by location, due to different race demographics and and cultural differences.
+We also would like to provide visual comparison of the trends over time across different communities with different racial compositions. 
+
+
+The Data Source(s) You Intend to Use (2 points)
+We are using Twitter’s REST API to query tweets from different cities across America.   As a preliminary analysis we will be looking at the cities of  New York,  Houston, Los Angeles, Louisville,  Nashville,  Washington DC, Boston, Chicago, Dallas, and Detroit. We tried these cities as we believe they will capture a wide variety of spectrum.
+The tweets will be from this past week. For each city, we will gather 1000 tweets. For now we are storing the data locally on our computers, but may have to discuss different, more scalable options. We plan to collect more data from times further in the past to better track the change over time. We currently don’t have this data right now, because we need to go through 3rd party applications to get  it at a historical level.
+We will also get demographic data of the cities to be able to control for the factors such as income and education. 
+
+
+Data Flaws/Weaknesses and Cleaning (4 points)
+Our data is extremely noisy. One of the  things we are interested in teasing out the racist tone in these tweets but it turns out that there is not an easy way to do that. Since this is necessarily an emotionally loaded issue, most these tweets have negative sentiments. However, this does not necessarily mean that the tweets themselves are racist. So for now we are not quite sure how to approach the problem of labelling these tweets’ positions in the race conversations.
+
+
+
+
+Basic Data Characteristics (4 points)
+Coming soon
+Surprises (4 Points)
+None
+Next Steps, any Obstacles (2 Points)
+We need to create some kind of sentiment analysis for tracking degrees of racism. We have found some papers on this topic, so we can go off of their suggestions for now. 
+Another thing we need to work on is obtaining historical tweets.
